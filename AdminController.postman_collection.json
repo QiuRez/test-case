@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "68c5a3a0-2b8f-4f71-a042-9e12dec7c80e",
+		"name": "AdminController",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33190285"
+	},
+	"item": [
+		{
+			"name": "SetIsActive",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"posts\": [2,3,4,5,6],\r\n    \"comments\": [3002,3003,3004],\r\n    \"isActiveStatus\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ADMIN}}/setIsActive",
+					"host": [
+						"{{ADMIN}}"
+					],
+					"path": [
+						"setIsActive"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "5|SYsd2ezNZnvtL5BQaa5fpeQlXC6Idz587TGdFhnY2aa71951",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
